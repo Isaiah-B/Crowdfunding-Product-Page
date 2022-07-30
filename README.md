@@ -28,4 +28,4 @@ Users of this page should be able to:
 
 ## Author
 
--Frontend Mentor [@Isaiah-B](https://www.frontendmentor.io/profile/Isaiah-B)
+- Frontend Mentor [@Isaiah-B](https://www.frontendmentor.io/profile/Isaiah-B)
