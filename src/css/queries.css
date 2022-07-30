@@ -1,0 +1,263 @@
+/********************************/
+/* ABOVE 1440px */
+/********************************/
+@media (min-width: 90em) {
+  .header {
+    background-position-x: 50%;
+  }
+}
+
+/********************************/
+/* BELOW 1024px */
+/********************************/
+@media (max-width: 64em) {
+  .header-top {
+    padding: 5rem 4.5rem;
+  }
+}
+
+/********************************/
+/* BELOW 768px */
+/********************************/
+@media (max-width: 48em) {
+  .header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.085)), 
+    url('../../public/images/image-hero-mobile.jpg');
+    background-size: cover;
+  }
+
+  .logo {
+    z-index: 99999;
+  }
+
+  .nav-main {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 9999;
+    width: 60%;
+    border-radius: 9px;
+    transform: translateX(-50%);
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  .nav-item {
+    padding: 2.4rem;
+  }
+
+  .nav-item:not(.nav-item:last-child) {
+    border-bottom: 1px solid hsl(0, 0%, 92%);
+  }
+
+  .nav-item a:link,
+  .nav-item a:visited {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 0%);
+  }
+
+  .nav-menu-btn {
+    display: block;
+  }
+
+  #mobile-nav-close {
+    display: none;
+  }
+
+  .nav-open .nav-main {
+    display: block;
+  }
+
+  .nav-open .mobile-nav-bg::before {
+    display: block;
+  }
+
+  .nav-open #mobile-nav-open {
+    display: none;
+  }
+
+  .nav-open #mobile-nav-close {
+    display: block;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .modal {
+    width: 90%;
+  }
+
+  .pledge-modal {
+    grid-template-rows: auto 1fr;
+    row-gap: 2rem;
+  }
+}
+
+/********************************/
+/* BELOW 672px */
+/********************************/
+@media (max-width: 42em) {
+
+  .pledge-top-row-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stats {
+    padding: 3.2rem;
+  }
+
+  .stats-top-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stat-item {
+    align-items: center;
+  }
+
+  .stat-item:not(.stat-item:last-child) {
+    border-right: none;
+    position: relative;
+    /* border-bottom: 1px solid hsl(0, 0%, 85%); */
+  }
+
+  .stat-item:not(.stat-item:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 1px;
+    background-color: hsl(0, 0%, 85%);
+  }
+}
+
+/********************************/
+/* BELOW 576px */
+/********************************/
+@media (max-width: 36em) {
+  .btn-bookmark {
+    padding: 0;
+  }
+
+  .btn-bookmark span {
+    display: none;
+  }
+
+  .pledge-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modal {
+    top: 65%;
+  }
+
+  .pledge-modal {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+/********************************/
+/* BELOW 464px */
+/********************************/
+@media (max-width: 29em) {
+
+  .heading-primary {
+    font-size: 2.2rem;
+  }
+
+  .heading-quaternary {
+    font-size: 1.4rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+
+  .nav-main {
+    width: 90%;
+  }
+
+  .intro-text-margin-bottom {
+    margin-bottom: 2.4rem;
+  }
+
+  .section-box {
+    padding: 4rem 2.6rem;
+  }
+
+  .pledge {
+    padding: 2.4rem
+  }
+
+  .pledge-amount {
+    font-size: 1.4rem;
+  }
+
+  .pledge-top-row {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .pledge-text-margin {
+    margin-bottom: 2.2rem;
+  }
+
+  .pledge-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .modal {
+    padding: 2.8rem;
+    top: 80%;
+  }
+
+  .modal .heading-tertiary {
+    font-size: 1.8rem;
+  }
+
+  .modal-text {
+    margin-bottom: 2rem;
+  }
+
+  .modal-content {
+    padding: 0;
+  }
+
+  .pledge-modal {
+    grid-template-rows: auto 1fr;
+    column-gap: 0;
+    row-gap: 3rem;
+  }
+
+  .pledge-modal .body-text {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .pledge-modal.no-reward {
+    column-gap: 2rem;
+  }
+
+  .pledge-left-wrapper {
+    grid-row: 3;
+  }
+
+  .pledge-cta {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
